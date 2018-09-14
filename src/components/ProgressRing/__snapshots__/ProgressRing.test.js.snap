@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProgressRing /> with a value 1`] = `
+<div
+  className="progress-ring "
+  style={
+    Object {
+      "height": 160,
+      "width": 160,
+    }
+  }
+>
+  <svg
+    className="progress-ring__image"
+    height={160}
+    viewBox="0 0 160 160"
+    width={160}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      className="progress-ring__background-ring"
+      cx={80}
+      cy={80}
+      fill="transparent"
+      r={73}
+      strokeWidth={14}
+    />
+    <circle
+      className="progress-ring__arc"
+      cx={80}
+      cy={80}
+      fill="transparent"
+      r={73}
+      strokeWidth={14}
+      style={
+        Object {
+          "strokeDasharray": "458.673 458.673",
+          "strokeDashoffset": "389.872",
+        }
+      }
+    />
+  </svg>
+  <div
+    className="progress-ring__label"
+  >
+    <span
+      className="progress-ring__label-itself"
+    >
+      15
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<ProgressRing /> with a value and active 1`] = `
+<div
+  className="progress-ring progress-ring--active"
+  style={
+    Object {
+      "height": 160,
+      "width": 160,
+    }
+  }
+>
+  <svg
+    className="progress-ring__image"
+    height={160}
+    viewBox="0 0 160 160"
+    width={160}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      className="progress-ring__background-ring"
+      cx={80}
+      cy={80}
+      fill="transparent"
+      r={73}
+      strokeWidth={14}
+    />
+    <circle
+      className="progress-ring__arc"
+      cx={80}
+      cy={80}
+      fill="transparent"
+      r={73}
+      strokeWidth={14}
+      style={
+        Object {
+          "strokeDasharray": "458.673 458.673",
+          "strokeDashoffset": "389.872",
+        }
+      }
+    />
+  </svg>
+  <div
+    className="progress-ring__label"
+  >
+    <span
+      className="progress-ring__label-itself"
+    >
+      15
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<ProgressRing /> without props 1`] = `
+<div
+  className="progress-ring "
+  style={
+    Object {
+      "height": 160,
+      "width": 160,
+    }
+  }
+>
+  <svg
+    className="progress-ring__image"
+    height={160}
+    viewBox="0 0 160 160"
+    width={160}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      className="progress-ring__background-ring"
+      cx={80}
+      cy={80}
+      fill="transparent"
+      r={73}
+      strokeWidth={14}
+    />
+    <circle
+      className="progress-ring__arc"
+      cx={80}
+      cy={80}
+      fill="transparent"
+      r={73}
+      strokeWidth={14}
+      style={
+        Object {
+          "strokeDasharray": "458.673 458.673",
+          "strokeDashoffset": "458.673",
+        }
+      }
+    />
+  </svg>
+  <div
+    className="progress-ring__label"
+  >
+    <span
+      className="progress-ring__label-itself"
+    >
+      0
+    </span>
+  </div>
+</div>
+`;

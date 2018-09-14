@@ -4,7 +4,7 @@ See how it works:
 
 ## Requirements
 
-When uploading files on https://wetransfer.com you see our famous progress spinner. It grows and grows as it spins around, showing the percentage in the centre.
+When uploading files on https://wetransfer.com you see progress spinner. It grows and grows as it spins around, showing the percentage in the centre.
 
 Recreate the spinner as a re-usable web component (using the ES2015 syntax) and include start and end buttons that enable or disable the spinning.
 
@@ -13,7 +13,12 @@ Write tests.
 
 ## Implementations notes
 
-
+* Ring and percentage always visible. Decided not to do different component for states, where “upload” isn't in a progress and has 0%, and when upload is finished. In real project, I would consulte with a designer what to do in these cases.
+* Stop button resets progress. It could be a pause button (keep current progress state). Requirements weren't clear about this. Decided to make just a stop button, because this project is a demo and it's simpler. In real project, I would consulte with a designer what to do in this case.
+* `<ProgressRing />` is a reusable component. It could be reused within the app. It's a presentational component and do only visualization of a progress depends on input props. It's not ready to distributed via npm, because it's not clear what to do with CSS to make it easy to use for other users.
+* Made a fake progress data source with `setInterval`.
+* Used Create React App to speed up development of this demo. Usually I like to have more control of tools I use.
+* In Microsoft Edge and IE11 when progress at 0%, blue line isn't invisible. It renders as a dot. It's a [known bug](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/9780637/). I see two solutions: ignore it, or don't apply blue line ends rounding, unless it's more than 0%. I choose the first option.
 
 ## Docs
 

@@ -1,0 +1,36 @@
+.card {
+	margin: 50px auto;
+	padding: 20px;
+	width: 200px;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+}
+.card__progress {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+.card__actions {
+	margin: 0;
+	text-align: center;
+}
+.card__action {
+	padding: 0 35px;
+	height: 40px;
+	outline: none;
+	border: none;
+	border-radius: 20px;
+	background: hsl(210, 100%, 63%);
+	color: #fff;
+	font-size: 16px;
+	font-family: inherit;
+	cursor: pointer;
+}
+.card__action:hover,
+.card__action:focus {
+	background: hsl(210, 100%, 53%);
+}
+.card__action:active {
+	background: hsl(210, 100%, 43%);
+}
