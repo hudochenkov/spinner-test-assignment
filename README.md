@@ -1,6 +1,6 @@
 # Spinner Test Assignment
 
-See how it works: 
+See how it works: https://spinner-test-assignment-08b7bb.netlify.com/
 
 ## Requirements
 
